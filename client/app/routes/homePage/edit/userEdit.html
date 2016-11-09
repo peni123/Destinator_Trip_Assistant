@@ -1,0 +1,42 @@
+<div id="login-background" class="container col-md-12">
+	<div class="row login-form">
+ 		
+  		
+  		
+ 		<form class=" login box blurred-bg tinted" name="editForm" action="some.php" method="POST" ng-submit="editForm.$valid && makeNewPass(user)" novalidate>
+    		<p>Forgot your account's password? 
+  		<br>Enter your username and new password.</p>
+    		<h2 class="nonactive"><a ng-href="#/homePage/login"> sign in </a></h2>
+
+  			<h2 class="nonactive"><a ng-href="#/homePage/signUp">  sign up </a></h2>
+    		<input type="text" class="text input-cointainer" name="username" placeholder="&nbsp; type username" required minlength="4" maxlength="24" ng-model="user.name">
+    	
+    		<br>
+    
+   			<!-- <br>
+  			<input type="e-mail" class="text input-cointainer" name="e-mail"  ng-model="user.email">
+   			<span>e-mail</span>
+    		<br> -->
+    		<br>
+  				<input type="password" class="text input-cointainer" name="password"  placeholder="&nbsp; type password " required minlength="6" maxlength="24" ng-model="user.password">
+   				
+    		<br>
+    		<br>
+  				<input type="password" class="text input-cointainer" name="password"  placeholder="&nbsp; repeat password "required minlength="6" maxlength="24" ng-model="user.passRepeat">
+   			
+    		<br>
+
+    		<button class="signin" type="submit" ng-click="makeNewPass()">
+     				 Update Account
+    		</button>
+    		
+  		</form>
+	</div>
+</div>
+<!-- <div ng-if="isLogged">
+        you are logged in
+    </div>
+    <div ng-if="failCount">
+        failed attempts {{failCount}}
+    </div>
+</div> -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Destinator</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Travel Assistant">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"></link>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-route/angular-route.js"></script>
+	<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXBhsxsDB1siUQ0i4aGKxHKEy9IyRdgSg&amp;callback&amp;&amp;extension=.js&libraries=places"></script>
+	<script src="node_modules/angular-cookies/angular-cookies.js"></script>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="dist/concat.js"></script>
+</head>
+<body ng-app="travelAssistant" ng-controller="PageController" ng-cloak>
+	<header>
+		<div class="navbar navbar-default">
+		    <div class="container-fluid">
+		        <div class="navbar-header" id="navbar-header">
+		           <a ng-href="#/homePage/login" class="navbar-brand" id="top">Destinator</a>
+		            		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+			           		 </button>
+		        </div>
+		        <div class="navbar-collapse collapse" id="navbar-main">
+		            <ul class="nav navbar-nav">
+		                <li ng-hide="!flag">
+		                 <a ng-href="#/InsidePage/mapApp" ng-click="MapCtrl()" ><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>My Map</a>
+		                </li> 
+		                <li>
+		                    <a ng-href="#/homePage/contacts"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Contacts</a>
+		                </li>
+		                <li ng-hide="flag"><a ng-href="#/homePage/login" class="log"><span class="glyphicon glyphicon-log-in" ></span>Log In</a></li>
+						 <li ng-hide="!flag" ng-click="logout()"><a ng-href="#/homePage/login" class="log"><span class="glyphicon glyphicon-log-in"></span>Log Out</a></li>
+						<li ng-hide="flag"><a ng-href="#/homePage/signUp" class="sign"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+	</header>
+
+	<div ng-view></div>
+
+	<footer class="container-fluid" >
+		<p>Destinator &#169; 2016 Privacy Policy</p>
+		<p class="bold">Questions? Call Us Toll Free: (012) 123-456-7890</p>
+		<div id="icons">
+			<a href ="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		</div>
+		<div id="contacts">
+			<a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a> <br/>
+		</div>
+	</footer>
+</body>
+</html>

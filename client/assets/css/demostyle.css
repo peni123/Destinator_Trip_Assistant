@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+@font-face{
+	font-family: Digory; 
+	font-family: 'Hello';
+	font-family: 'Desert';
+	src: "css/Digory_Doodles_PS.ttf";
+	src: "css/DesertQueenPersonalUse.ttf";
+	src: "main/node_modules/font-awesome/fonts/HelloHandMeDown.ttf"
+}
+
+.my {
+	color: white;
+	background: url("../img/Butterfly-hq-wallpaper-HD.jpg") no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Desert', 'Open Sans', sans-serif;;
+    width: 100%;
+    height: 350px;
+    padding-top: 30px;
+    box-shadow: 5px 8px 5px #888888;
+}
+.my h3 {
+	margin: 10px;
+}
+dl {
+	padding: 15px;
+}
+.my dt {
+	padding: 0.1em 0 0.3em 0;
+	text-align: right;
+}
+
+.my dd {
+/* font-family: "Hello"; */
+	margin-top: 0.4em;
+	font-size: 1.1em;
+	font-weight: bold;
+	
+	
+}
+.my dd:first-child {
+	color: yellow;
+}
+.my dd:last-of-type {
+color: yellow;
+}

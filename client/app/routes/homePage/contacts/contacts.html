@@ -1,0 +1,27 @@
+<div class="cotainer">
+<div class="row">
+<div class="col-md-12">
+	<section id="form">
+				 <h2>Mail us</h2>
+				<form name="contactForm" method="POST" ng-submit="contactForm.$valid && userAjaxMessage()" novalidate>
+					<div class="line1">
+						<label for="name">Your Name</label>
+						<input type="text" id="name" name="name" required ng-model="user.name"> 
+					</div>
+					<div class="line1">
+						<label for="email">Your Email</label>
+						<input type="email" id="email" name="email" required ng-model="user.email">
+					</div>
+					<div class="line1">
+						<label for="message">Your Message</label>
+						<textarea id="message" name="message" required ng-model="user.message"></textarea>
+					</div>
+					
+					<div class="button">
+						<button type="submit" class="btn" >SEND</button>
+					</div>
+				</form>
+			</section>
+	</div>
+</div>
+</div>

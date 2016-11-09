@@ -1,0 +1,22 @@
+$totalHeight : 100%;
+
+//width values
+$totalWidth : 1280px;
+$oneThirdWidth : $totalWidth/3;
+$oneSixthWidth : $totalWidth/6;
+$twoThirdsWidth : ($totalWidth/3)*2;
+$oneFifthWidth : $totalWidth/5;
+$oneFourthWidth : ($totalWidth/4)*1.02;
+$map-size : ($totalWidth*5/6)*0.975;
+$map-size2 : $totalWidth*5/7;
+
+//height values
+$windowHeight: 520px;
+$halfWindowHeight: $windowHeight/2;
+$oneFifthWindowHeight : $windowHeight/5;
+$oneSeventhWindowHeight : $windowHeight/7;
+$oneFourFifthWindowHeight : $windowHeight*4/5;
+$headerHeight : $oneSeventhWindowHeight*0.8;
+$nav2Height: $headerHeight*0.45;
+$nav2fontSize : 0.9em;
+$oneThirdWindowHeight :  $windowHeight/3;
